@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="top|center"
     android:orientation="vertical"
@@ -90,12 +89,25 @@
             />
 
         <TextView
+            android:id="@+id/healthyTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/healthyTxt"
             android:padding="10dp"
             android:textSize="35sp"
             android:text="result"
-            style="@style/TextAppearance.AppCompat.Headline"
-            />
-    </LinearLayout>
+            style="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:id="@+id/weight_history_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="View Weight History" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:text="Save
+" />
+</LinearLayout>
